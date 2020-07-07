@@ -1,0 +1,7 @@
+7/6/2020 RK  I changed bootargs to hopefully use SD card's second partition as rootfs
+
+To decompile device tree:
+  dtc -I dtb -O dts -o devicetree.dts devicetree.dtb
+
+To recompile device tree after changing bootargs:
+  dtc -I dts -O dtb -o new_devicetree.dtb new_devicetree.dts
